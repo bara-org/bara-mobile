@@ -33,6 +33,20 @@ angular.module('starter.controllers', [])
   };
 })
 
+.controller('FunController', function($scope) {
+    $scope.pickTheFun = function() {
+        var bara = new BARA();
+        bara.applyListActive(".fun");
+    };
+})
+
+.controller('RouteController', function($scope) {
+    $scope.pickARoute = function() {
+        var bara = new BARA();
+        bara.applyListActive(".route");
+    };
+})
+
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },

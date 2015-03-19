@@ -6,14 +6,21 @@
                 <h2>Favorite food and beer locations</h2>
                 <p>Every Thursday after the run</p>
             </div>
-            <div class="item item-body">
-                <ul class="list">
-                    <li class="item">Upland</li>
-                    <li class="item">Crazy Horse</li>
-                    <li class="item">Nick's</li>
-                    <li class="item">Bake House</li>
-                    <li class="item">Function</li>
-                </ul>
+            <div class="item item-body" ng-controller="FunController as fun">
+                <button ng-click="pickTheFun()" class="button button-block button-positive">
+                    Pick one for me
+                </button>
+                <div class="list">
+                    <a class="item fun" href="#">Bake House</a>
+                    <a class="item fun" href="#">Bub's Burgers and Ice Cream</a>
+                    <a class="item fun" href="#">Crazy Horse</a>
+                    <a class="item fun" href="#">Function</a>
+                    <a class="item fun" href="#">Irish Lion</a>
+                    <a class="item fun" href="#">Le Petit</a>
+                    <a class="item fun" href="#">Nick's</a>
+                    <a class="item fun" href="#">Upland</a>
+                    <a class="item fun" href="#">The Tap</a>
+                </div>
             </div>
         </div>
     </ion-content>
