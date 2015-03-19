@@ -6,17 +6,27 @@ BARA.prototype.random = function(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 };
 
+BARA.prototype.setObj = function(obj, key) {
+    window.localStorage[key] = JSON.stringify(obj);
+};
+
+BARA.prototype.getObj = function(key) {
+    return JSON.parse(window.localStorage[key] || null);
+};
+
 BARA.prototype.applyListActive = function(selector) {
     try {
-        var sel = $(selector);
+        var sel = $(selector).not(".bara-list-was-active");
         var size = sel.size();
         if (size > 0) {
-            sel.removeClass("bara-list-active");
-            var randomSel = sel.eq(this.random(0, size - 1));
+            $(selector).removeClass("bara-list-active");
+            var r = this.random(0, size - 1);
+            var randomSel = sel.eq(r);
             randomSel.addClass("bara-list-active");
+            randomSel.addClass("bara-list-was-active");
         }
     } catch (ex) {
         console.log(ex);
         alert(ex);
     }
-}
+};
