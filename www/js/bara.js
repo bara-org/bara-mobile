@@ -24,6 +24,10 @@ BARA.prototype.applyListActive = function(selector) {
             var randomSel = sel.eq(r);
             randomSel.addClass("bara-list-active");
             randomSel.addClass("bara-list-was-active");
+        } else {
+            $(selector).removeClass("bara-list-active");
+            $(selector).removeClass("bara-list-was-active");
+            this.applyListActive(selector);
         }
     } catch (ex) {
         console.log(ex);
