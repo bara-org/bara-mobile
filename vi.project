@@ -1,3 +1,3 @@
 #!/bin/bash
 
-vim README.md www/js/app.js www/js/controllers.js www/js/bara.js www/templates/home.html www/templates/menu.html www/templates/pick-a-route.html www/templates/route-campus-4.html www/templates/where-is-the-fun.html www/css/_bara.scss www/css/_style.scss www/css/_variables.scss
+vim README.md www/js/app.js www/js/controllers.js www/js/bara.js www/templates/home.html www/templates/menu.html www/templates/pick-a-route.html www/templates/route-campus-3.html www/templates/route-campus-4.html www/templates/route-campus-5.html www/templates/where-is-the-fun.html www/css/_bara.scss www/css/_style.scss www/css/_variables.scss
