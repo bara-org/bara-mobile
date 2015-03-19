@@ -1,5 +1,6 @@
 angular.module('starter.controllers', [])
 
+/*
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
   $scope.loginData = {};
@@ -32,6 +33,7 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
+*/
 
 .controller('FunController', function($scope) {
     $scope.pickTheFun = function() {
@@ -45,17 +47,6 @@ angular.module('starter.controllers', [])
         var bara = new BARA();
         bara.applyListActive(".route");
     };
-})
-
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
